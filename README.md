@@ -1,17 +1,11 @@
-# singularity-cloudmesh
+# singularity-cloudmesh [![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/1346)
 
-Building cloudmesh Singularity container on
-<a href="https://singularity-hub.org/">Singularity Hub</a>.
-
-Container is configured on Singularity Hub to re-build on each commit to the
+Container is configured on SingularityHub to re-build on each commit to the
 repository.
-
-Information about the container can be found
-<a href="https://singularity-hub.org/collections/405/">here</a>.
 
 Pull the container directly with the following command...
 
 ```
-% singularity pull shub://hpcdevops/singularity-cloudmesh:master
+% singularity pull shub://hpcdevops/singularity-cloudmesh
 ```
 
