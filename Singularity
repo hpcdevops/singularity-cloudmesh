@@ -1,22 +1,22 @@
 BootStrap: docker
-From: python:2.7.13
+From: python:2.7.15
 
 %labels
     SDSC_IMG_MAINTAINER hpcdevops
     SDSC_IMG_NAME cloudmesh_client
-    SDSC_IMG_DESC Python 2.7.13 Base Image w/ Cloudmesh Client
+    SDSC_IMG_DESC Python 2.7.15 Base Image w/ Cloudmesh CMD5 Client for Comet
     SDSC_IMG_VENDOR SDSC HPC Group
 
 %runscript
-    exec /usr/bin/python "$@"
+    exec /usr/local/bin/cms "$@"
 
 %test
-    cm version
+    cms version
 
 %post
 
     # Add cloudmesh tool...
-    pip install cloudmesh_client
+    pip install cloudmesh.comet
 
     # build info
     echo "Timestamp:" `date --utc` | tee /image-build-info.txt
