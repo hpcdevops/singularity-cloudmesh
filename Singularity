@@ -1,10 +1,10 @@
 BootStrap: docker
-From: python:2.7.15
+From: python:2.7.14
 
 %labels
     SDSC_IMG_MAINTAINER hpcdevops
     SDSC_IMG_NAME cloudmesh.client
-    SDSC_IMG_DESC Python 2.7.15 Base Image w/ Cloudmesh CMD5 Client for Comet
+    SDSC_IMG_DESC Python 2.7.14 Base Image w/ Cloudmesh CMD5 Client for Comet
     SDSC_IMG_VENDOR SDSC HPC Group
 
 %runscript
